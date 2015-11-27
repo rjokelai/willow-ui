@@ -6,7 +6,6 @@ class WebSocketService {
     this.url = url;
     this.id = id;
     this.actions = bindActionCreators(actionCreators, dispatch);
-    console.log(this.actions);
   }
 
   startWebSocket() {

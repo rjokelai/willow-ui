@@ -27,7 +27,6 @@ export function websockets(state = initialState, action) {
 
     case 'WEBSOCKET_MESSAGE':
       // TODO add functionality
-      console.log('got message', action)
       return state.updateIn([action.payload.id, 'messages'], (msgs) => Immutable.fromJS(msgs.push(action.payload.msg)))
   }
   return state
